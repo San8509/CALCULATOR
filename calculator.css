@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: 'georama', sans-serif;
+    font-size: 62,5%;
+    background-color: rgb(18, 39, 53);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 15px;
+    
+}
+
+.calculator {
+display: flex;
+flex-direction: column;
+width: 500px;
+font-size: 2rem;
+border-radius: 5px;
+border: 1px solid gray;
+background-color: rgba(4, 53, 106, 0.984);
+}
+
+.calculator-display {
+padding: 25px 15px;
+width: 100%;
+text-align: right;
+border: none;
+overflow-x: auto;
+color: aliceblue;
+}
+
+.calculator-keypad {
+display: flex;
+width: 100%;
+border: none;
+}
+
+.keypad-numbers {
+ display: flex;
+ flex-wrap: wrap;
+ width: 100%;
+ border: none;
+    
+}
+
+.keypad-button {
+width: 25%;
+padding: 15px 0;
+text-align: center;
+cursor: pointer;
+background-color: rgb(7, 91, 119);
+border: 0.5px solid gray;
+border-radius: 10px;
+color: aliceblue;
+}
+
+.keypad-button:hover {
+    filter: brightness(80%);
+    transition:  filter .25s;
+}
+
+.keypad-button.yellow {
+    background-color: yellow;
+    color: rgb(32, 32, 32);
+}
+
+.keypad-button.large {
+    width: 50%;
+    
+}
+
+.keypad-button.dark {
+    background-color: rgb(146, 133, 133);
+}
+
+.red {
+    background-color: rgb(173, 13, 13);
+    color: aliceblue;
+}
